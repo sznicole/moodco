@@ -5,17 +5,13 @@ import { cors } from 'hono/cors'
 const app = new Hono()
 app.use('*', cors())
 
+//Mood type; same as defined in page.tsx
 type Mood = {
   emoji: string;
   mood: string;
 }
 
-const moods: Mood[] = []; //Stores options that the user can click
 const moodHistory: Mood[] = []; //Stores the user's mood history
-
-app.get('/', (c) => {
-  return c.text('Hello! How are you feeling today?')
-})
 
 //Enters moods into the array, moodHistory
 app.post('/api/moods', async (c) => {
@@ -24,7 +20,7 @@ app.post('/api/moods', async (c) => {
   return c.json({success: true})
 })
 
-//Returns the mood history to the userad
+//Returns the mood history to the user
 app.get('/api/moods', (c) => {
   return c.json(moodHistory);
 })

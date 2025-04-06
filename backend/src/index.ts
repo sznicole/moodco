@@ -18,14 +18,14 @@ app.get('/', (c) => {
 })
 
 //Enters moods into the array, moodHistory
-app.post('/backend/index.ts', async (c) => {
+app.post('/api/moods', async (c) => {
   const mood: Mood = await c.req.json()
   moodHistory.push(mood)
   return c.json({success: true})
 })
 
 //Returns the mood history to the userad
-app.get('/backend/index.ts', (c) => {
+app.get('/api/moods', (c) => {
   return c.json(moodHistory);
 })
 

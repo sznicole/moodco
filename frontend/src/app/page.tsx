@@ -1,11 +1,14 @@
 //import Image from "next/image";
 //import styles from "./page.module.css";
 
+'use client'
+
+type Mood = {
+  emoji: string;
+  mood: string;
+}
+
 export default function Home() {
-  type Mood = {
-    emoji: string;
-    mood: string;
-  }
 
   const handleClick =  async (mood: Mood) => {
     await fetch('http://localhost:3000/api/moods', {

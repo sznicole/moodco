@@ -2,10 +2,6 @@
 //import styles from "./page.module.css";
 
 export default function Home() {
-  type Mood = {
-    emoji: string;
-    mood: string;
-  }
 
   return (
     <div>

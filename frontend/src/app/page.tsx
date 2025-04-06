@@ -19,6 +19,8 @@ export default function Home() {
     })
   }
 
+  
+
   return (
     <div>
       <main>
@@ -28,7 +30,7 @@ export default function Home() {
         <button onClick={() => handleClick({ emoji: '🙂', mood: 'neutral' })}>🙂</button>
         <button onClick={() => handleClick({ emoji: '😢', mood: 'sad' })}>😢</button>
         <button onClick={() => handleClick({ emoji: '😡', mood: 'angry' })}>😡</button>
-        
+
         <h2>History</h2>
 
       </main>

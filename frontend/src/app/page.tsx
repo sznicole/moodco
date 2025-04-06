@@ -1,6 +1,5 @@
 //import Image from "next/image";
 //import styles from "./page.module.css";
-import { Ultra } from 'next/font/google';
 //import { useEffect, useState } from 'react'
 
 'use client'

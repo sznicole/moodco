@@ -1,7 +1,6 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
-import { useEffect, useState } from 'react'
 
 const app = new Hono()
 app.use('*', cors())

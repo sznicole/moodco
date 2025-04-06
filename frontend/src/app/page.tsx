@@ -1,5 +1,6 @@
 //import Image from "next/image";
 //import styles from "./page.module.css";
+import { useEffect, useState } from 'react'
 
 'use client'
 
@@ -19,7 +20,11 @@ export default function Home() {
     })
   }
 
-  
+  useEffect(() => {
+
+  }, [])
+
+
 
   return (
     <div>

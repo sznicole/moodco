@@ -15,6 +15,7 @@ body {
   text-align: center;
   margin: auto;
   justify-content: center;
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,13 +38,13 @@ h1 {
 
 h2 {
   color: #6cccaf;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 button {
   background: transparent;
   border: none;
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
   margin: 15px;
 }

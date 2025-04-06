@@ -7,10 +7,6 @@ export default function Home() {
     mood: string;
   }
 
-  function handleClick() {
-
-  }
-
   return (
     <div>
       <main>

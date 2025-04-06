@@ -2,12 +2,12 @@
 //import styles from "./page.module.css";
 
 export default function Home() {
-  type Mood {
+  type Mood = {
     emoji: string;
     mood: string;
   }
 
-  const handleClick =  async (mood: Mood) {
+  const handleClick =  async (mood: Mood) => {
     await fetch('http://localhost:3000/api/moods', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

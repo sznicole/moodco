@@ -10,6 +10,7 @@ body {
 }
 
 body {
+  display: flex;
   color: var(--foreground);
   background: var(--background);
   text-align: center;
@@ -29,13 +30,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-div {
-  text-align: center;
-  height: 100vh;
-  margin: auto;
-  justify-content: center;
 }
 
 h1 {

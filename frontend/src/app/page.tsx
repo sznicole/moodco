@@ -1,6 +1,7 @@
 //import Image from "next/image";
 //import styles from "./page.module.css";
-import { useEffect, useState } from 'react'
+import { Ultra } from 'next/font/google';
+//import { useEffect, useState } from 'react'
 
 'use client'
 
@@ -20,14 +21,22 @@ export default function Home() {
     })
   }
 
-  useEffect(() => {
-
+  //NOTE: commented out for now because I'm still trying to figure out how to use useEffect in Home()'s return 
+  /* useEffect(() => {
+    async function getMoodHistory() {
+      const moodHistoryArrJson = await fetch('http://localhost:3000/api/moods')
+      const moodHistoryArr = await moodHistoryArrJson.json()
+      return moodHistoryArr;
+    }
+    
+    getMoodHistory()
   }, [])
+  */
 
 
 
   return (
-    <div>
+    <div className = "mainText">
       <main>
         <h1>MoodCo</h1>
         <h2>Hello! How are you feeling?</h2>
@@ -37,6 +46,7 @@ export default function Home() {
         <button onClick={() => handleClick({ emoji: '😡', mood: 'angry' })}>😡</button>
 
         <h2>History</h2>
+        
 
       </main>
     </div>

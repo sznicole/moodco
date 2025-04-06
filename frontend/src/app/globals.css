@@ -29,5 +29,11 @@ a {
 }
 
 h2 {
-  color: #5C9EAD;
+  color: #778DA9;
+}
+
+button {
+  background: transparent;
+  border: none;
+  font-size: 30px;
 }

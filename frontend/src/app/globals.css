@@ -29,13 +29,15 @@ a {
 }
 
 h2 {
-  color: #778DA9;
+  color: #f87fda;
 }
 
 button {
   background: transparent;
   border: none;
   font-size: 30px;
+  text-align: center;
+  margin: 15px;
 }
 
 button:hover {

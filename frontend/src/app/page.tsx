@@ -35,16 +35,20 @@ export default function Home() {
 
 
   return (
-    <div className = "mainText">
+    <div>
       <main>
         <h1>MoodCo</h1>
         <h2>Hello! How are you feeling?</h2>
-        <button onClick={() => handleClick({ emoji: '😁', mood: 'happy' })}>😁</button>
-        <button onClick={() => handleClick({ emoji: '🙂', mood: 'neutral' })}>🙂</button>
-        <button onClick={() => handleClick({ emoji: '😢', mood: 'sad' })}>😢</button>
-        <button onClick={() => handleClick({ emoji: '😡', mood: 'angry' })}>😡</button>
+
+        <div className = "emojiButtons">
+          <button onClick={() => handleClick({ emoji: '😁', mood: 'happy' })}>😁</button>
+          <button onClick={() => handleClick({ emoji: '🙂', mood: 'neutral' })}>🙂</button>
+          <button onClick={() => handleClick({ emoji: '😢', mood: 'sad' })}>😢</button>
+          <button onClick={() => handleClick({ emoji: '😡', mood: 'angry' })}>😡</button>
+        </div>
 
         <h2>History</h2>
+
         
 
       </main>

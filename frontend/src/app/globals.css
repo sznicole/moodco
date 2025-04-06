@@ -11,11 +11,15 @@ body {
 
 body {
   display: flex;
+  flex-direction: column;
+
   color: var(--foreground);
   background: var(--background);
+
   text-align: center;
   margin: auto;
   justify-content: center;
+  
   font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,9 +49,14 @@ h2 {
 button {
   background: transparent;
   border: none;
-  font-size: 40px;
   text-align: center;
   margin: 15px;
+  font-size: 40px;
+}
+
+.emojiButtons {
+  display: flex;
+  justify-content: center;
 }
 
 button:hover {

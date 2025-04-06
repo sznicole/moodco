@@ -22,12 +22,13 @@ export default function Home() {
   return (
     <div>
       <main>
-        <h1>Hello!</h1>
+        <h1>MoodCo</h1>
+        <h2>Hello! How are you feeling?</h2>
         <button onClick={() => handleClick({ emoji: '😁', mood: 'happy' })}>😁</button>
         <button onClick={() => handleClick({ emoji: '🙂', mood: 'neutral' })}>🙂</button>
         <button onClick={() => handleClick({ emoji: '😢', mood: 'sad' })}>😢</button>
         <button onClick={() => handleClick({ emoji: '😡', mood: 'angry' })}>😡</button>
-
+        
         <h2>History</h2>
 
       </main>
